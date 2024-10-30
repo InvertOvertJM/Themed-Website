@@ -4,3 +4,83 @@
     background-size:100vw 100vh;
     background-repeat:no-repeat;
 }
+
+/*CREATE LE FONT */
+@font-face{
+    font-family: 'Fondamento';
+    src: url('fonts/Fondamento.ttf');
+}
+
+body.font {
+    font-family: 'Fondamento', sans-serif;
+  }
+
+
+.font{
+    font-family: 'Fondamento', sans-serif;
+}
+
+/*Navbar bg */
+.navbar-custom {
+    background-color:  #180c1b;
+  }
+
+
+  /*Navbar text */
+.navbar-custom .navbar-brand,.navbar-custom .nav-link, .navbar-custom .dropdown-item {
+    color: #942444;
+  }
+
+
+  /*Hamburger menu color change */
+  .navbar-custom .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23942444' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+
+
+/*why does this need that COMMA??? */
+  .navbar-custom .navbar-toggler:focus, .navbar-custom .navbar-toggler:active { 
+    outline: 2px solid #942444;
+  }
+
+  
+ /*new hover and active color */
+.navbar-custom .navbar-brand:hover,
+.navbar-custom .nav-link:hover,
+.navbar-custom .dropdown-item:hover {
+    color: #ac9494;
+  }
+
+  .navbar-custom .nav-link:active,
+  .navbar-custom .nav-link.active,
+  .navbar-custom .navbar-brand:active {
+    color: #ac9494;
+  }
+
+
+  /* image in middle */
+  .imgthing {
+    max-width: 100%; 
+    height: auto; 
+    border: 30px solid transparent;
+    padding:15px;
+    border-image:url(images/orbtexture.webp);
+}
+.imagecontain {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+#rainAnimation{
+    background-color: rgba(255,255,255,0.2);
+
+}
+
+footer {
+    background-color: #180c1b;
+    color: #942444;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+  }
