@@ -5,23 +5,23 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
 // Raindrops
-const rainNUMBER = 20; 
+const rainNUMBER = 30; 
 const Drops = []; 
 
 //raindrops are random!!!
+//same speed but random length to seem more dynamic
 function createRaindrops() {
     for (let i = 0; i < rainNUMBER; i++) { 
         Drops.push({ x: Math.random() * canvas.width,
                       y: Math.random() * canvas.height,
-                      speed: Math.random() * 3 + 2,
-                      length: Math.random() * 20 + 10 }); 
+                      speed: 10, length: Math.random() * 8 + 10 }); 
     }
 }
 
 function drawRaindrops() {
     ctx.clearRect(0, 0, canvas.width, canvas.height); 
     ctx.strokeStyle = 'red'; 
-    ctx.lineWidth = 2; 
+    ctx.lineWidth = 1; 
     Drops.forEach(drop => { 
         ctx.beginPath(); 
         ctx.moveTo(drop.x, drop.y); 
