@@ -26,10 +26,7 @@ body.font {
   }
 
 
-  /*Navbar text */
-.navbar-custom .navbar-brand,.navbar-custom .nav-link, .navbar-custom .dropdown-item {
-    color: #942444;
-  }
+
 
 
   /*Hamburger menu color change */
@@ -45,11 +42,18 @@ body.font {
 
   
  /*new hover and active color */
-.navbar-custom .navbar-brand:hover,
-.navbar-custom .nav-link:hover,
-.navbar-custom .dropdown-item:hover {
-    color: #ac9494;
-  }
+
+  /*Navbar text */
+  .navbar-custom .navbar-brand,.navbar-custom .nav-link, .navbar-custom .dropdown-item {
+    transition: color 0.5s ease;
+      color: #942444;
+    }
+
+    .navbar-custom .navbar-brand:hover,
+    .navbar-custom .nav-link:hover,
+    .navbar-custom .dropdown-item:hover {
+        color: #ac9494; /* Color on hover */
+    }
 
   .navbar-custom .nav-link:active,
   .navbar-custom .nav-link.active,
@@ -73,8 +77,10 @@ body.font {
 }
 
 #rainAnimation{
-    background-color: rgba(255,255,255,0.2);
-
+    background-color: rgba(0, 0, 0, 1);
+    width: 100%; 
+    height: auto;
+    display: block;
 }
 
 footer {
@@ -84,3 +90,82 @@ footer {
     text-align: center;
     width: 100%;
   }
+
+.text{
+  color:blanchedalmond;
+  text-shadow: 
+  -1px -1px 0 #942444,  
+  1px -1px 0 #942444,
+  -1px 1px 0 #942444,
+  1px 1px 0 #942444;
+}
+
+.blood-drop {
+  text-align: center;
+}
+
+.accordion {
+  background-color: #180c1b; 
+}
+
+.accordion-button {
+  color: #942444; 
+  background-color: #180c1b; 
+  border: none; 
+}
+
+.accordion-button:hover {
+  background-color: #230e29; 
+  color: #942444; 
+}
+
+
+
+.accordion-button:not(.collapsed) {
+  background-color: #180c1b;
+  color: #942444;
+}
+
+.accordion-body {
+  color: #942444; 
+  background-color: #180c1b; 
+}
+
+.invitation-text {
+  text-align: center;
+  font-size: 36px;
+  color: red;
+  margin-top: 20px;
+}
+
+.brand{
+  height: 30px; 
+  margin-right: 5px;
+}
+
+.rotate-1 {
+  transform: rotate(20deg);
+  transform: skew(15deg, 15deg);
+}
+
+.rotate-2 {
+  transform: rotate(40deg);
+  transform: skew(4deg, 40deg);
+}
+
+.rotate-3 {
+  transform: rotate(155deg);
+
+}
+
+.rotate-4 {
+  transform: rotate(167deg);
+}
+
+.rotate-5 {
+  transform: rotate(170deg);
+}
+
+.rotate-6 {
+  transform: rotate(225deg);
+}
